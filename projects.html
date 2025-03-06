@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .projects-section {
+            padding: 4rem 0;
+        }
+
+        .project-card {
+            background-color: var(--darker-bg);
+            border-radius: 15px;
+            padding: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 224, 255, 0.2);
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .project-description {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+            flex-grow: 1;
+        }
+
+        .project-card .btn {
+            background-color: var(--accent-color);
+            color: var(--darker-bg);
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin-top: 1rem;
+        }
+
+        .project-card .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 224, 255, 0.4);
+        }
+
+        .btn-custom {
+            background-color: var(--accent-color);
+            color: var(--darker-bg);
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 224, 255, 0.4);
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+        <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-home me-2"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about-me.html">
+                        <i class="fas fa-user me-2"></i> About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="academic-info.html">
+                        <i class="fas fa-graduation-cap me-2"></i> Academic Info
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skills.html">
+                        <i class="fas fa-code me-2"></i> Skills
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="achievement.html">
+                        <i class="fas fa-trophy me-2"></i> Achievement
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="certification.html">
+                        <i class="fas fa-certificate me-2"></i> Certification
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="co-curriculum.html">
+                        <i class="fas fa-running me-2"></i> Co-Curriculum
+                    </a>
+                </li>
+                <!-- Added Projects -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="projects.html">
+                        <i class="fas fa-project-diagram me-2"></i> Projects
+                    </a>
+                </li>
+                <!-- Added Events -->
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">
+                        <i class="fas fa-calendar-alt me-2"></i> Events
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        <i class="fas fa-envelope me-2"></i> Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-5 text-center" style="color: var(--accent-color);">Projects</h1>
+
+            <!-- Project 1: ZenithZone -->
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-shopping-cart fa-2x me-3" style="color: var(--accent-color);"></i>
+                            <h3 class="project-title">ZenithZone (Online Shopping Platform)</h3>
+                        </div>
+                        <p class="project-description">
+                            ZenithZone is an innovative online shopping platform that enhances user experiences with features like Auto Search, Voice Search, and personalized recommendations, alongside curated artisan exhibitions and a vibrant marketplace for second-hand items. It transforms every purchase into a journey towards peak satisfaction.
+                        </p>
+                        <a href="https://github.com/Rajibkd1/ZenithZone.git" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 2: CarDetective -->
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-car fa-2x me-3" style="color: var(--accent-color);"></i>
+                            <h3 class="project-title">CarDetective (Car Number Plate Tracker)</h3>
+                        </div>
+                        <p class="project-description">
+                            CarDetective is a computer vision-based project that tracks car number plates and provides information about the car to authorized personnel, enhancing public safety and law enforcement efforts.
+                        </p>
+                        <a href="https://github.com/IIT-NSTU/CarDetective.git" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: EduConnect -->
+            <div class="row g-4 mt-4">
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-chalkboard-teacher fa-2x me-3" style="color: var(--accent-color);"></i>
+                            <h3 class="project-title">EduConnect (Student-Tutor-Guardian Platform)</h3>
+                        </div>
+                        <p class="project-description">
+                            EduConnect is a streamlined platform connecting students, tutors, and guardians, simplifying the search for the right educational guidance. It's a user-friendly hub where effective agreements enhance learning, making education both convenient and harmonious for everyone involved.
+                        </p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 4: Task Trek -->
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-tasks fa-2x me-3" style="color: var(--accent-color);"></i>
+                            <h3 class="project-title">Task Trek (Productivity App)</h3>
+                        </div>
+                        <p class="project-description">
+                            Task Trek is a Java-based application designed to streamline your productivity by organizing daily tasks and projects efficiently. Experience a clear path to completing your goals with intuitive navigation and powerful task management features.
+                        </p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: CryptoShield Folder Locker -->
+            <div class="row g-4 mt-4">
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-lock fa-2x me-3" style="color: var(--accent-color);"></i>
+                            <h3 class="project-title">CryptoShield Folder Locker (Security App)</h3>
+                        </div>
+                        <p class="project-description">
+                            CryptoShield Folder Locker is a security software that encrypts and locks folders on your computer, ensuring that only authorized users can access sensitive files.
+                        </p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 6: BookBlossom -->
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-book fa-2x me-3" style="color: var(--accent-color);"></i>
+                            <h3 class="project-title">BookBlossom (Book Recommendation System)</h3>
+                        </div>
+                        <p class="project-description">
+                            BookBlossom is a Python-based, machine learning recommendation system that delivers personalized book suggestions, enhancing readers' literary journeys with perfectly matched titles.
+                        </p>
+                        <a href="https://github.com/Rajibkd1/BookBlossom.git" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back to Home Button -->
+            <div class="text-center mt-5">
+                <a href="index.html" class="btn btn-custom">
+                    <i class="fas fa-arrow-left me-2"></i>Back to Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

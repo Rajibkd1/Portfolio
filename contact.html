@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-card {
+            background-color: var(--darker-bg);
+            border-radius: 10px;
+            padding: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 224, 255, 0.2);
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .form-control {
+            background-color: var(--dark-bg);
+            border: 1px solid var(--accent-color);
+            color: white;
+            border-radius: 5px;
+            padding: 0.75rem 1rem;
+        }
+
+        .form-control:focus {
+            background-color: var(--dark-bg);
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 0.25rem rgba(0, 224, 255, 0.25);
+            color: white;
+        }
+
+        .btn-custom {
+            background-color: var(--accent-color);
+            color: var(--darker-bg);
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 224, 255, 0.4);
+        }
+
+        .highlight {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+        <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-home me-2"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about-me.html">
+                        <i class="fas fa-user me-2"></i> About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="academic-info.html">
+                        <i class="fas fa-graduation-cap me-2"></i> Academic Info
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skills.html">
+                        <i class="fas fa-code me-2"></i> Skills
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="achievement.html">
+                        <i class="fas fa-trophy me-2"></i> Achievement
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="certification.html">
+                        <i class="fas fa-certificate me-2"></i> Certification
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="co-curriculum.html">
+                        <i class="fas fa-running me-2"></i> Co-Curriculum
+                    </a>
+                </li>
+                <!-- Added Projects -->
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">
+                        <i class="fas fa-project-diagram me-2"></i> Projects
+                    </a>
+                </li>
+                <!-- Added Events -->
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">
+                        <i class="fas fa-calendar-alt me-2"></i> Events
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">
+                        <i class="fas fa-envelope me-2"></i> Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Contact Section -->
+    <div class="container py-5">
+        <h1 class="display-4 fw-bold mb-5 text-center" style="color: var(--accent-color);">Contact Me</h1>
+        <div class="row g-4">
+            <!-- Contact Details -->
+            <div class="col-md-6">
+                <div class="contact-card h-100">
+                    <div class="text-center">
+                        <i class="fas fa-address-book contact-icon"></i>
+                        <h3 class="fs-4 mb-4 highlight">Contact Information</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="fas fa-envelope me-2 highlight"></i>
+                                <strong>Email:</strong> rrajibkd@gmail.com
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-phone me-2 highlight"></i>
+                                <strong>Phone:</strong> +880 17804-92587
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-map-marker-alt me-2 highlight"></i>
+                                <strong>Address:</strong> Maijdee, Noakhali, Chittagong
+                            </li>
+                            <li class="mb-3">
+                                <i class="fab fa-linkedin me-2 highlight"></i>
+                                <strong>LinkedIn:</strong> 
+                                <a href="https://linkedin.com/in/rajib-kd" target="_blank" class="highlight">linkedin.com/in/rajib-kd</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <div class="contact-card h-100">
+                    <div class="text-center">
+                        <i class="fas fa-paper-plane contact-icon"></i>
+                        <h3 class="fs-4 mb-4 highlight">Send Me a Message</h3>
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-custom">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

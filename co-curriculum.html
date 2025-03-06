@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-curriculum</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero-section {
+            padding: 4rem 0;
+        }
+
+        .custom-card {
+            background-color: var(--darker-bg);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .custom-card-header {
+            background-color: rgba(0, 224, 255, 0.1);
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .custom-card-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
+        .custom-card-header p {
+            font-size: 1.25rem;
+            color: var(--accent-color);
+        }
+
+        .activity-item {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .activity-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 224, 255, 0.2);
+        }
+
+        .activity-icon {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+        }
+
+        .activity-period {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .activity-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+
+        .btn-custom {
+            background-color: var(--accent-color);
+            color: var(--darker-bg);
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 224, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home me-2"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-me.html">
+                            <i class="fas fa-user me-2"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="academic-info.html">
+                            <i class="fas fa-graduation-cap me-2"></i> Academic Info
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">
+                            <i class="fas fa-code me-2"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="achievement.html">
+                            <i class="fas fa-trophy me-2"></i> Achievement
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="certification.html">
+                            <i class="fas fa-certificate me-2"></i> Certification
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="co-curriculum.html">
+                            <i class="fas fa-running me-2"></i> Co-Curriculum
+                        </a>
+                    </li>
+                    <!-- Added Projects -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">
+                            <i class="fas fa-project-diagram me-2"></i> Projects
+                        </a>
+                    </li>
+                    <!-- Added Events -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">
+                            <i class="fas fa-calendar-alt me-2"></i> Events
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="fas fa-envelope me-2"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Co-curricular Activities Section -->
+    <section class="hero-section">
+        <div class="container py-4">
+            <div class="custom-card shadow">
+                <!-- Header -->
+                <div class="custom-card-header">
+                    <h1 class="display-6 fw-bold">
+                        <i class="fas fa-users me-3"></i>Co-curricular Activities
+                    </h1>
+                    <p class="mb-0 lead">Leadership and Participation</p>
+                </div>
+                
+                <!-- Activities -->
+                <div class="p-4 p-md-5">
+                    <div class="row g-4">
+                        <!-- IT Club Activity -->
+                        <div class="col-md-6">
+                            <div class="activity-item">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="activity-icon me-3">
+                                        <i class="fas fa-laptop-code"></i>
+                                    </div>
+                                    <span class="activity-period">October 2024 – Present</span>
+                                </div>
+                                <h3 class="activity-title">Office Secretary, IT Club</h3>
+                            </div>
+                        </div>
+                        
+                        <!-- Coding Club Activity -->
+                        <div class="col-md-6">
+                            <div class="activity-item">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="activity-icon me-3">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <span class="activity-period">2022 – Present</span>
+                                </div>
+                                <h3 class="activity-title">Member, University Coding Club</h3>
+                            </div>
+                        </div>
+                        
+                        <!-- Tech Conference Activity -->
+                        <div class="col-md-6">
+                            <div class="activity-item">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="activity-icon me-3">
+                                        <i class="fas fa-microphone"></i>
+                                    </div>
+                                    <span class="activity-period">2021</span>
+                                </div>
+                                <h3 class="activity-title">Volunteer, National Tech Conference</h3>
+                            </div>
+                        </div>
+                        
+                        <!-- Sports Week Activity -->
+                        <div class="col-md-6">
+                            <div class="activity-item">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="activity-icon me-3">
+                                        <i class="fas fa-running"></i>
+                                    </div>
+                                    <span class="activity-period">2020</span>
+                                </div>
+                                <h3 class="activity-title">Organizer, University Sports Week</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Footer/Back button -->
+                    <div class="text-center mt-5">
+                        <a href="index.html" class="btn btn-custom">
+                            <i class="fas fa-home me-2"></i>Back to Home
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
