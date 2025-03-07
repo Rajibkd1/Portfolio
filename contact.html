@@ -19,8 +19,16 @@
         }
 
         .contact-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 224, 255, 0.2);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 224, 255, 0.3);
+        }
+        
+        .contact-card:hover .contact-icon {
+            transform: scale(1.1);
+        }
+        
+        .contact-card:hover .position-absolute {
+            opacity: 1;
         }
 
         .contact-icon {
@@ -38,10 +46,8 @@
         }
 
         .form-control:focus {
-            background-color: var(--dark-bg);
             border-color: var(--accent-color);
             box-shadow: 0 0 0 0.25rem rgba(0, 224, 255, 0.25);
-            color: white;
         }
 
         .btn-custom {
@@ -55,8 +61,8 @@
         }
 
         .btn-custom:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 224, 255, 0.4);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 224, 255, 0.4);
         }
 
         .highlight {
@@ -129,68 +135,145 @@
         </div>
     </div>
 </nav>
-
-    <!-- Contact Section -->
-    <div class="container py-5">
-        <h1 class="display-4 fw-bold mb-5 text-center" style="color: var(--accent-color);">Contact Me</h1>
-        <div class="row g-4">
-            <!-- Contact Details -->
-            <div class="col-md-6">
-                <div class="contact-card h-100">
-                    <div class="text-center">
-                        <i class="fas fa-address-book contact-icon"></i>
-                        <h3 class="fs-4 mb-4 highlight">Contact Information</h3>
-                        <ul class="list-unstyled">
-                            <li class="mb-3">
-                                <i class="fas fa-envelope me-2 highlight"></i>
-                                <strong>Email:</strong> rrajibkd@gmail.com
-                            </li>
-                            <li class="mb-3">
-                                <i class="fas fa-phone me-2 highlight"></i>
-                                <strong>Phone:</strong> +880 17804-92587
-                            </li>
-                            <li class="mb-3">
-                                <i class="fas fa-map-marker-alt me-2 highlight"></i>
-                                <strong>Address:</strong> Maijdee, Noakhali, Chittagong
-                            </li>
-                            <li class="mb-3">
-                                <i class="fab fa-linkedin me-2 highlight"></i>
-                                <strong>LinkedIn:</strong> 
-                                <a href="https://linkedin.com/in/rajib-kd" target="_blank" class="highlight">linkedin.com/in/rajib-kd</a>
-                            </li>
-                        </ul>
-                    </div>
+<!-- Contact Section -->
+<div class="container py-5">
+    <h1 class="display-4 fw-bold mb-5 text-center" style="color: var(--accent-color);">Contact Me</h1>
+    <div class="row g-4">
+        <!-- Contact Details -->
+        <div class="col-md-6">
+            <div class="contact-card h-100 p-4 position-relative" style="
+                background: linear-gradient(145deg, rgba(10, 14, 20, 0.9), rgba(7, 10, 13, 0.9));
+                border-radius: 15px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+                transition: transform 0.3s, box-shadow 0.3s;
+            ">
+                <div class="text-center">
+                    <i class="fas fa-address-book contact-icon" style="
+                        font-size: 2.5rem;
+                        color: var(--accent-color);
+                        margin-bottom: 1.5rem;
+                        transition: transform 0.3s;
+                    "></i>
+                    <h3 class="fs-4 mb-4 highlight" style="color: var(--accent-color);">Contact Information</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-envelope me-2 highlight" style="color: var(--accent-color);"></i>
+                            <strong>Email:</strong> rrajibkd@gmail.com
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone me-2 highlight" style="color: var(--accent-color);"></i>
+                            <strong>Phone:</strong> +880 17804-92587
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt me-2 highlight" style="color: var(--accent-color);"></i>
+                            <strong>Address:</strong> Maijdee, Noakhali, Chittagong
+                        </li>
+                        <li class="mb-3">
+                            <i class="fab fa-linkedin me-2 highlight" style="color: var(--accent-color);"></i>
+                            <strong>LinkedIn:</strong> 
+                            <a href="https://linkedin.com/in/rajib-kd" target="_blank" class="highlight" style="color: var(--accent-color); text-decoration: none;">
+                                linkedin.com/in/rajib-kd
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+                <!-- Glow Effect -->
+                <div class="position-absolute top-0 start-0 w-100 h-100" style="
+                    background: radial-gradient(circle, rgba(0, 224, 255, 0.1), transparent 70%);
+                    opacity: 0;
+                    transition: opacity 0.3s;
+                    pointer-events: none;
+                    border-radius: 15px;
+                "></div>
             </div>
+        </div>
 
-            <!-- Contact Form -->
-            <div class="col-md-6">
-                <div class="contact-card h-100">
-                    <div class="text-center">
-                        <i class="fas fa-paper-plane contact-icon"></i>
-                        <h3 class="fs-4 mb-4 highlight">Send Me a Message</h3>
-                    </div>
-                    <form>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Subject" required>
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-custom">Send Message</button>
-                        </div>
-                    </form>
+        <!-- Contact Form -->
+        <div class="col-md-6">
+            <div class="contact-card h-100 p-4 position-relative" style="
+                background: linear-gradient(145deg, rgba(10, 14, 20, 0.9), rgba(7, 10, 13, 0.9));
+                border-radius: 15px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+                transition: transform 0.3s, box-shadow 0.3s;
+            ">
+                <div class="text-center">
+                    <i class="fas fa-paper-plane contact-icon" style="
+                        font-size: 2.5rem;
+                        color: var(--accent-color);
+                        margin-bottom: 1.5rem;
+                        transition: transform 0.3s;
+                    "></i>
+                    <h3 class="fs-4 mb-4 highlight" style="color: var(--accent-color);">Send Me a Message</h3>
                 </div>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name" required style="
+                            background-color: var(--dark-bg);
+                            border: 1px solid var(--accent-color);
+                            color: white;
+                            border-radius: 8px;
+                            padding: 0.75rem 1rem;
+                            transition: border-color 0.3s, box-shadow 0.3s;
+                        ">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email" required style="
+                            background-color: var(--dark-bg);
+                            border: 1px solid var(--accent-color);
+                            color: white;
+                            border-radius: 8px;
+                            padding: 0.75rem 1rem;
+                            transition: border-color 0.3s, box-shadow 0.3s;
+                        ">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Subject" required style="
+                            background-color: var(--dark-bg);
+                            border: 1px solid var(--accent-color);
+                            color: white;
+                            border-radius: 8px;
+                            padding: 0.75rem 1rem;
+                            transition: border-color 0.3s, box-shadow 0.3s;
+                        ">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="5" placeholder="Your Message" required style="
+                            background-color: var(--dark-bg);
+                            border: 1px solid var(--accent-color);
+                            color: white;
+                            border-radius: 8px;
+                            padding: 0.75rem 1rem;
+                            transition: border-color 0.3s, box-shadow 0.3s;
+                        "></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-custom" style="
+                            background: var(--accent-gradient);
+                            color: var(--darker-bg);
+                            border: none;
+                            padding: 0.75rem 2rem;
+                            border-radius: 30px;
+                            font-weight: 600;
+                            transition: transform 0.3s, box-shadow 0.3s;
+                        ">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+                <!-- Glow Effect -->
+                <div class="position-absolute top-0 start-0 w-100 h-100" style="
+                    background: radial-gradient(circle, rgba(0, 224, 255, 0.1), transparent 70%);
+                    opacity: 0;
+                    transition: opacity 0.3s;
+                    pointer-events: none;
+                    border-radius: 15px;
+                "></div>
             </div>
         </div>
     </div>
+</div>
 
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
